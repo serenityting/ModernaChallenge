@@ -28,7 +28,7 @@ Each possible structure has an associated Gibbs free energy, approximated as a s
 - **Quantum annealing**: analog approach (D-Wave) that continuously evolves a physical qubit system from an easy-to-prepare ground state toward the ground state of a target Ising Hamiltonian (QUBO), exploiting quantum tunneling to escape local minima.
 - **Quantum-inspired methods**: classical algorithms (simulated annealing, simulated bifurcation, tensor-network contraction) that mimic annealing-like dynamics without quantum hardware. As shown below, these are currently the most *practical* backend for this problem size.
 
-### 1.5 Our approach, in one paragraph
+### 1.5 Our approach
 We enumerate candidate base pairs, score them with a simplified pairwise + stacking energy model, and encode "which pairs are simultaneously present" as a QUBO — with penalty terms forbidding a base from pairing twice and forbidding crossing (pseudoknotted) pairs. We solve this QUBO three ways (exact brute force for validation, simulated annealing as the quantum-inspired baseline, and QAOA on a gate-based simulator), decode the result back into dot-bracket notation, and compare against ViennaRNA's true MFE structure on both structural-accuracy and true-Turner-energy terms.
 
 ---
