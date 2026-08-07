@@ -1,0 +1,10 @@
+ViennaRNA>=2.6
+dwave-neal>=0.6
+dimod>=0.12
+qiskit>=2.0
+qiskit-aer>=0.17
+qiskit-algorithms>=0.4
+qiskit-optimization>=0.7
+pandas>=2.0
+matplotlib>=3.8
+tabulate>=0.9
