@@ -1,0 +1,8 @@
+instance,length,method,num_qubits_or_vars,runtime_sec,feasible_rate,was_repaired,sequence,reference_structure,reference_mfe_kcal,candidate_structure,candidate_turner_energy_kcal,energy_gap_kcal,exact_match,true_positive_pairs,false_positive_pairs,false_negative_pairs,sensitivity,ppv,f1,mcc,bp_distance
+hairpin_9nt,9,simulated_annealing,9,0.04682612419128418,1.0,False,GGGAAAUCC,.........,0.0,(((...))),1.100000023841858,1.100000023841858,False,0,3,0,1.0,0.0,0.0,0.0,3
+hairpin_9nt,9,brute_force_exact_qubo,9,0.0015020370483398438,1.0,False,GGGAAAUCC,.........,0.0,(((...))),1.100000023841858,1.100000023841858,False,0,3,0,1.0,0.0,0.0,0.0,3
+hairpin_9nt,9,qaoa_simulator,9,111.65502166748047,,False,GGGAAAUCC,.........,0.0,.........,0.0,0.0,True,0,0,0,1.0,1.0,1.0,0.0,0
+hairpin_16nt,16,simulated_annealing,16,0.08562994003295898,1.0,False,GGGGAAAACCCCAAAA,((((....))))....,-7.099999904632568,((((....))))....,-7.099999904632568,0.0,True,4,0,0,1.0,1.0,1.0,1.0,0
+hairpin_16nt,16,brute_force_exact_qubo,16,0.49692797660827637,1.0,False,GGGGAAAACCCCAAAA,((((....))))....,-7.099999904632568,((((....))))....,-7.099999904632568,0.0,True,4,0,0,1.0,1.0,1.0,1.0,0
+cloverleaf_like_22nt,22,simulated_annealing,68,0.48866701126098633,1.0,False,GGGCGCAAGGAUAAGCGCCCUU,((((((........))))))..,-13.0,(((((((....)..))))))..,-8.399999618530273,4.600000381469727,False,6,1,0,1.0,0.8571428571428571,0.923076923076923,0.8728715609439694,1
+challenge_example_44nt,44,simulated_annealing,313,4.747392177581787,1.0,False,GGAGCAAAACUUGUCGAUUGAGAACAAAAUACAGAAUUUGCUUG,.(((((((..((((...(((....)))...))))..))))))).,-7.900000095367432,.(((((((.((.((..((((....)..)))))))..))))))).,-1.0,6.900000095367432,False,10,5,4,0.7142857142857143,0.6666666666666666,0.689655172413793,0.40089186286863654,9
