@@ -17,7 +17,7 @@ A structure is written as a string the same length as the sequence: `(` and `)` 
 GGGGAAAACCCCAAAA
 ((((....))))....
 ```
-is a single 4-bp stem closing a 4-nt hairpin loop, with a 4-nt unpaired tail. Only *nested* structures are representable this way — crossing pairs (pseudoknots) need extended bracket alphabets (`[[..]]`, `{{..}}`) or separate annotation. Our model, like ViennaRNA's default MFE algorithm, restricts to the nested case (see §6.4 for why).
+is a single 4-base-pair(4-bp) stem closing a 4-nucleotide (4-nt) hairpin loop with a 4-nucleotide(4-nt) unpaired tail. Only *nested* structures are representable this way — crossing pairs (pseudoknots) need extended bracket alphabets (`[[..]]`, `{{..}}`) or separate annotation. Our model, like ViennaRNA's default MFE algorithm, restricts to the nested case (see §6.4 for why).
 
 ### 1.3 Minimum Free Energy (MFE) folding
 Each possible structure has an associated Gibbs free energy, approximated as a sum of *local* contributions: helix-stacking energies (favorable, sequence-dependent, from the Turner nearest-neighbor parameters) and loop-initiation penalties (entropic costs for hairpins, bulges, internal loops, multiloops). The MFE structure is the one minimizing total free energy. Classically, Zuker's algorithm finds it *exactly* (for the nested case) via O(n³)-time, O(n²)-space dynamic programming — this is what `RNA.fold()` in ViennaRNA implements, and it is the ground truth we benchmark against throughout this project.
