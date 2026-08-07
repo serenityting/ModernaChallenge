@@ -2,7 +2,7 @@
 ### Final Report
 
 **Repo layout:** `src/` (all code), `results/` (CSV/Markdown outputs), `figures/` (plots).
-Reproduce everything with `python3 src/run_all.py` (see README).
+Can be reproduced by running `python3 src/run_all.py` (see README).There is a jupyternotebook to run all the python file for this challenge.
 
 ---
 
